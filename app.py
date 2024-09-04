@@ -50,6 +50,7 @@ def printer():
             "Error decompressing message for Gateway "
         )
         traceback.print_last()
+        buffers[path] = bytearray()
         return 'no'
 
     buffers[path] = bytearray()
