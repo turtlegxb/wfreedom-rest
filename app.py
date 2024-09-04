@@ -32,15 +32,14 @@ def hello_world():
     return "hello"
 
 
-@app.route('/printer', methods=['GET', 'POST'])
+@app.route('/printer', methods=['POST'])
 def printer():
-    app.logger.info(request)
-    path = request.args.get('path')
-    data = request.args.get('data')
+    path = request.form.get('path')
+    data = request.form.get('content')
     if path not in buffers:
         buffers[path] = bytearray()
     buffer = buffers[path]
-    chunk = b64decode(bytes(data, encoding='raw_unicode_escape'))
+    chunk = b64decode(data)
     buffer.extend(chunk)
     print(chunk)
     if not buffer.endswith(b'\x00\x00\xff\xff'):
