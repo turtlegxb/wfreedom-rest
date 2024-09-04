@@ -4,6 +4,7 @@ import traceback
 import zlib
 
 import erlpack
+import requests
 from flask import Flask, request
 from base64 import b64decode
 
@@ -47,7 +48,6 @@ def printer():
     buffer.extend(chunk)
     if not buffer.endswith(b'\x00\x00\xff\xff'):
         return 'ok'
-    print(buffer)
     try:
         payload = decompressor.decompress(buffer)
     except BaseException as e:
@@ -62,6 +62,15 @@ def printer():
     app.logger.info(payload)
     return 'ok'
 
+def deal_with_messsage(message):
+    url = 'https://discord.com/api/webhooks/1280947188096176180/lLHcxuE6mNkykxViCIbOnUYEwiSWvUs36_MIYZ-a6ViubUfnst8t3eaDP_uJDwPi_KW_'
+    if message.get('t', None) != 'MESSAGE_CREATE':
+        return
+    msg = {
+        'content': message.get('content'),
+        'username': message.get('author').get('username')
+    }
+    requests.post(url, msg)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)
