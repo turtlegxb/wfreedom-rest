@@ -51,7 +51,6 @@ def printer():
         print(
             "Error decompressing message for Gateway "
         )
-        traceback.print_last()
         buffers[path] = bytearray()
         return 'no'
 
