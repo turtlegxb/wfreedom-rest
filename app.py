@@ -39,7 +39,7 @@ def printer():
     if path not in buffers:
         buffers[path] = bytearray()
     buffer = buffers[path]
-    chunk = b64decode(data)
+    chunk = b64decode(data[1:])
     buffer.extend(chunk)
     print(chunk)
     if not buffer.endswith(b'\x00\x00\xff\xff'):
