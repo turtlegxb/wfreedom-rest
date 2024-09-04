@@ -67,8 +67,8 @@ def deal_with_messsage(message):
     if message.get('t', None) != 'MESSAGE_CREATE':
         return
     msg = {
-        'content': message.get('content'),
-        'username': message.get('author').get('username')
+        'content': message.get('d').get('content'),
+        'username': message.get('d').get('author').get('username')
     }
     requests.post(url, msg)
 
