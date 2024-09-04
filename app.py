@@ -32,7 +32,7 @@ def hello_world():
     return "hello"
 
 
-@app.route('/printer')
+@app.route('/printer', methods=['GET', 'POST'])
 def printer():
     path = request.args.get('path')
     data = request.args.get('data')
