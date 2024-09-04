@@ -34,6 +34,7 @@ def hello_world():
 
 @app.route('/printer', methods=['GET', 'POST'])
 def printer():
+    app.logger.info(request)
     path = request.args.get('path')
     data = request.args.get('data')
     if path not in buffers:
