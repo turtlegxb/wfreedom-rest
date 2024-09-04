@@ -1,3 +1,4 @@
+import json
 import logging
 import traceback
 import zlib
@@ -8,7 +9,7 @@ from base64 import b64decode
 
 app = Flask(__name__)
 buffers = {}
-decompressor = zlib.decompressobj()
+decompressors = {}
 
 
 def deserialize_erlpackage(payload):
@@ -38,6 +39,8 @@ def printer():
     data = request.form.get('content')
     if path not in buffers:
         buffers[path] = bytearray()
+        decompressors[path] = zlib.decompress()
+    decompressor = decompressors[path]
     buffer = buffers[path]
     chunk = b64decode(data)
     buffer.extend(chunk)
@@ -54,7 +57,7 @@ def printer():
         return 'no'
 
     buffers[path] = bytearray()
-    payload = deserialize_erlpackage(erlpack.unpack(payload))
+    payload = json.loads(payload)
     app.logger.info(payload)
     return 'ok'
 
