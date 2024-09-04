@@ -1,4 +1,5 @@
 import logging
+import traceback
 import zlib
 
 import erlpack
@@ -44,10 +45,11 @@ def printer():
 
     try:
         payload = decompressor.decompress(buffer)
-    except:
+    except BaseException as e:
         print(
             "Error decompressing message for Gateway "
         )
+        traceback.print_last()
         return 'no'
 
     buffers[path] = bytearray()
