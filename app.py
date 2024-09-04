@@ -64,7 +64,7 @@ def printer():
 
 def deal_with_messsage(message):
     url = 'https://discord.com/api/webhooks/1280947188096176180/lLHcxuE6mNkykxViCIbOnUYEwiSWvUs36_MIYZ-a6ViubUfnst8t3eaDP_uJDwPi_KW_'
-    if message.get('t', None) != 'MESSAGE_CREATE':
+    if message.get('t', None) != 'MESSAGE_CREATE' or message.get('d').get('channel_id') == '1280220293759238238':
         return
     app.logger.info(message)
     msg = {
