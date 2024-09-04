@@ -11,3 +11,4 @@ def hello_world():
 @app.route('/printer')
 def printer():
     logging.info(request.get_json())
+    return request.get_json()
