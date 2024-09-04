@@ -39,7 +39,8 @@ def printer():
     data = request.form.get('content')
     if path not in buffers:
         buffers[path] = bytearray()
-        decompressors[path] = zlib.decompress()
+        decompressors[path] = zlib.decompressobj()
+        app.logger.info('creating new path:' + path)
     decompressor = decompressors[path]
     buffer = buffers[path]
     chunk = b64decode(data)
