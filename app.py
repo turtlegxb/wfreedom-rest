@@ -42,7 +42,7 @@ def printer():
     buffer.extend(b64decode(data))
     if not buffer.endswith(b'\x00\x00\xff\xff'):
         return 'ok'
-
+    print(buffer)
     try:
         payload = decompressor.decompress(buffer)
     except BaseException as e:
