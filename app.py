@@ -41,7 +41,6 @@ def printer():
     buffer = buffers[path]
     chunk = b64decode(data)
     buffer.extend(chunk)
-    print(chunk)
     if not buffer.endswith(b'\x00\x00\xff\xff'):
         return 'ok'
     print(buffer)
