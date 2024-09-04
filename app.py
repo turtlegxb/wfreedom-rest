@@ -38,9 +38,7 @@ def printer():
     if path not in buffers:
         buffers[path] = bytearray()
     buffer = buffers[path]
-    app.logger.info(data)
-    app.logger.info(data[2:-2])
-    buffer.extend(b64decode(data[2:-2]))
+    buffer.extend(b64decode(data))
     if not buffer.endswith(b'\x00\x00\xff\xff'):
         return 'ok'
 
