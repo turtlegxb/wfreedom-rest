@@ -9,6 +9,7 @@ app = Flask(__name__)
 buffers = {}
 decompressor = zlib.decompressobj()
 
+
 def deserialize_erlpackage(payload):
     if isinstance(payload, bytes):
         return payload.decode()
@@ -24,9 +25,11 @@ def deserialize_erlpackage(payload):
     else:
         return payload
 
+
 @app.route('/')
 def hello_world():
     return "hello"
+
 
 @app.route('/printer')
 def printer():
@@ -51,3 +54,7 @@ def printer():
     payload = deserialize_erlpackage(erlpack.unpack(payload))
     app.logger.info(payload)
     return 'ok'
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=80, debug=True)
