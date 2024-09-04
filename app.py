@@ -48,7 +48,7 @@ def printer():
         print(
             "Error decompressing message for Gateway "
         )
-        return
+        return 'no'
 
     buffers[path] = bytearray()
     payload = deserialize_erlpackage(erlpack.unpack(payload))
