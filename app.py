@@ -59,13 +59,14 @@ def printer():
 
     buffers[path] = bytearray()
     payload = json.loads(payload)
-    app.logger.info(payload)
+    deal_with_messsage(payload)
     return 'ok'
 
 def deal_with_messsage(message):
     url = 'https://discord.com/api/webhooks/1280947188096176180/lLHcxuE6mNkykxViCIbOnUYEwiSWvUs36_MIYZ-a6ViubUfnst8t3eaDP_uJDwPi_KW_'
     if message.get('t', None) != 'MESSAGE_CREATE':
         return
+    app.logger.info(message)
     msg = {
         'content': message.get('d').get('content'),
         'username': message.get('d').get('author').get('username')
