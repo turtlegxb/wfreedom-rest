@@ -75,7 +75,7 @@ def deal_with_messsage(message):
     if message.get('t', None) != 'MESSAGE_CREATE' or message.get('d').get('channel_id') == '1280220293759238238':
         return
     if message.get('d').get('channel_id') in REPOST_MAP:
-        url = REPOST_MAP[url]
+        url = REPOST_MAP[message.get('d').get('channel_id')]
     else:
         return
     app.logger.info(message)
