@@ -66,7 +66,7 @@ def printer():
             "Error decompressing message for Gateway "
         )
         buffers[path] = bytearray()
-        return 'no'
+        return 'no', 400
 
     buffers[path] = bytearray()
     payload = json.loads(payload)
