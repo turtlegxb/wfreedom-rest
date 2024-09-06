@@ -18,6 +18,9 @@ REPOST_MAP = {
     '1121583569941315634' : 'https://discord.com/api/webhooks/1281227521534333020/wv1eZm0pu-2KTylUPRr-go_omLguJqlLy9wM1hc10Gn1bu1pZUFx0P6y68xzdDbH_UUM', # jv
     '1181808200358580225' : 'https://discord.com/api/webhooks/1281227785553186816/jcbLyG21MakQowAT1ql9XWLi0T6gH3WRqJkhbb-mxvI2q3SnfiKGqTFppUqijwY3MuoW', # mike
     '969226339766927410' : 'https://discord.com/api/webhooks/1281228125908500530/yFRi7p6EMg2arZGittSnK3xC9H_oTvAV2ylp0IpusrdDozM4Q7_PyJjjv0w8NWNWsuV0', # UW
+    '1266488368452206746' : 'https://discord.com/api/webhooks/1281575646576775210/qwLKhUj-Z5B0HLQyJ2onCL4Zxo0Zc8Eys5cB732krR0tFJlJfSFQzwNzIKKPMJCEjqPn', # cobra
+    '1230679792299282502' : 'https://discord.com/api/webhooks/1281575975326453913/aQrO9578YZHwwcNHL71N-U0kyaJUY1XFSHXfr3L0C7f-9iZAI4BW4RhLjmB4RWMNzEDj', # wick
+    '1113626703491776562' : 'https://discord.com/api/webhooks/1281576484749836309/GF1MYLJ0aRHoNg3uF86df0hjE6wqiLkc_ZF31VNquA2swEaNRHrbKImUWFk0OLwHWgsB' # eagle
 }
 
 
