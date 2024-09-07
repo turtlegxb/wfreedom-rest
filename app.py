@@ -7,6 +7,7 @@ import erlpack
 import requests
 from flask import Flask, request
 from base64 import b64decode
+from discord_webhook import DiscordWebhook, DiscordEmbed
 
 app = Flask(__name__)
 buffers = {}
@@ -84,14 +85,19 @@ def deal_with_messsage(message):
     else:
         return
     app.logger.info(message)
-    msg = {
-        'content': message.get('d').get('content'),
-        'username': message.get('d').get('author').get('username')
-    }
+    webhook = DiscordWebhook(url=url, content=message.get('d').get('content'), username=message.get('d').get('username'))
+    # msg = {
+    #     'content': message.get('d').get('content'),
+    #     'username': message.get('d').get('author').get('username')
+    # }
 
     if len(message.get('d').get('attachments')) > 0:
-        msg['attachments'] = message.get('d').get('attachments')
-    requests.post(url, msg)
+        for attachment in message.get('attachments'):
+            embed = DiscordEmbed()
+            embed.set_image(url=attachment.get('url'))
+            webhook.add_embed(embed)
+    # requests.post(url, msg)
+    response = webhook.execute()
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)
