@@ -92,7 +92,7 @@ def deal_with_messsage(message):
     # }
 
     if len(message.get('d').get('attachments')) > 0:
-        for attachment in message.get('attachments'):
+        for attachment in message.get('d').get('attachments'):
             embed = DiscordEmbed()
             embed.set_image(url=attachment.get('url'))
             webhook.add_embed(embed)
