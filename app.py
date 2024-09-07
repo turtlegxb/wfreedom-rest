@@ -21,7 +21,8 @@ REPOST_MAP = {
     '1266488368452206746' : 'https://discord.com/api/webhooks/1281575646576775210/qwLKhUj-Z5B0HLQyJ2onCL4Zxo0Zc8Eys5cB732krR0tFJlJfSFQzwNzIKKPMJCEjqPn', # cobra
     '1230679792299282502' : 'https://discord.com/api/webhooks/1281575975326453913/aQrO9578YZHwwcNHL71N-U0kyaJUY1XFSHXfr3L0C7f-9iZAI4BW4RhLjmB4RWMNzEDj', # wick
     '1230679377700716594' : 'https://discord.com/api/webhooks/1281575975326453913/aQrO9578YZHwwcNHL71N-U0kyaJUY1XFSHXfr3L0C7f-9iZAI4BW4RhLjmB4RWMNzEDj', # wick
-    '1113626703491776562' : 'https://discord.com/api/webhooks/1281576484749836309/GF1MYLJ0aRHoNg3uF86df0hjE6wqiLkc_ZF31VNquA2swEaNRHrbKImUWFk0OLwHWgsB' # eagle
+    '1113626703491776562' : 'https://discord.com/api/webhooks/1281576484749836309/GF1MYLJ0aRHoNg3uF86df0hjE6wqiLkc_ZF31VNquA2swEaNRHrbKImUWFk0OLwHWgsB', # eagle
+    '1258356916133036043' : 'https://discord.com/api/webhooks/1280947188096176180/lLHcxuE6mNkykxViCIbOnUYEwiSWvUs36_MIYZ-a6ViubUfnst8t3eaDP_uJDwPi_KW_' # test
 }
 
 
