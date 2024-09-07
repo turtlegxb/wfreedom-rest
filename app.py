@@ -89,7 +89,7 @@ def deal_with_messsage(message):
     }
 
     if len(message.get('d').get('attachments')) > 0:
-        msg['attachments'] = [{'id': x.get('id')} for x in message.get('d').get('attachments')]
+        msg['attachments'] = message.get('d').get('attachments')
     requests.post(url, msg)
 
 if __name__ == '__main__':
