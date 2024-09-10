@@ -88,11 +88,16 @@ def deal_with_messsage(message):
     elif message.get('d').get('channel_id') == '994362479830384650' and len(message.get('d').get('attachments', [])) > 0 \
             and ('net_market_1__999' in message.get('d').get('attachments')[0].get('url')
                  or 'algo_market_1__999' in message.get('d').get('attachments')[0].get('url')
-    or 'net_spy_1__999' in message.get('d').get('attachments')[0].get('url')
-    or 'net_qqq_1__999' in message.get('d').get('attachments')[0].get('url')
-    or 'algo_spy_1__999' in message.get('d').get('attachments')[0].get('url')
-    or 'algo_qqq_1__999' in message.get('d').get('attachments')[0].get('url')):
+                or 'net_spy_1__999' in message.get('d').get('attachments')[0].get('url')
+                or 'net_qqq_1__999' in message.get('d').get('attachments')[0].get('url')
+                or 'algo_spy_1__999' in message.get('d').get('attachments')[0].get('url')
+                or 'algo_qqq_1__999' in message.get('d').get('attachments')[0].get('url')):
         url = 'https://discord.com/api/webhooks/1283034978669563945/s6D2y9EBTM7MPEVZ5DKc5IAocF8YyCbTj6G0CGPWlNeEnkn2n87PIjBIsK9i0-fdYSFt' # tr-mnf
+    elif (message.get('d').get('channel_id') == '994362479830384650' or message.get('d').get('channel_id') == '742187231342755911') and len(message.get('d').get('attachments', [])) > 0 \
+        and ('gexz_spx_s' in message.get('d').get('attachments')[0].get('url')
+                 or 'gexz_spy_s' in message.get('d').get('attachments')[0].get('url')
+                or 'gexz_qqq_s' in message.get('d').get('attachments')[0].get('url')):
+        url = 'https://discord.com/api/webhooks/1283136528134045706/NzdVbgpUsBbXJstXggvjKRVDU68WLK-KIja3B2l6nV3iovn_Zi33HFoVWzBO7srIgX3z' # tr-gex
     else:
         return
     app.logger.info(message)
