@@ -85,7 +85,13 @@ def deal_with_messsage(message):
         return
     if message.get('d').get('channel_id') in REPOST_MAP:
         url = REPOST_MAP[message.get('d').get('channel_id')]
-    elif message.get('d').get('channel_id') == '994362479830384650' and len(message.get('d').get('attachments', [])) > 0 and ('net_market_1__999' in message.get('d').get('attachments')[0].get('url') or 'algo_market_1__999' in message.get('d').get('attachments')[0].get('url')):
+    elif message.get('d').get('channel_id') == '994362479830384650' and len(message.get('d').get('attachments', [])) > 0 \
+            and ('net_market_1__999' in message.get('d').get('attachments')[0].get('url')
+                 or 'algo_market_1__999' in message.get('d').get('attachments')[0].get('url')
+    or 'net_spy_1__999' in message.get('d').get('attachments')[0].get('url')
+    or 'net_qqq_1__999' in message.get('d').get('attachments')[0].get('url')
+    or 'algo_spy_1__999' in message.get('d').get('attachments')[0].get('url')
+    or 'algo_qqq_1__999' in message.get('d').get('attachments')[0].get('url')):
         url = 'https://discord.com/api/webhooks/1283034978669563945/s6D2y9EBTM7MPEVZ5DKc5IAocF8YyCbTj6G0CGPWlNeEnkn2n87PIjBIsK9i0-fdYSFt' # tr-mnf
     else:
         return
