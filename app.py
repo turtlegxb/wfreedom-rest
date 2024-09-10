@@ -23,6 +23,9 @@ REPOST_MAP = {
     '1230679792299282502' : 'https://discord.com/api/webhooks/1281575975326453913/aQrO9578YZHwwcNHL71N-U0kyaJUY1XFSHXfr3L0C7f-9iZAI4BW4RhLjmB4RWMNzEDj', # wick
     '1230679377700716594' : 'https://discord.com/api/webhooks/1281575975326453913/aQrO9578YZHwwcNHL71N-U0kyaJUY1XFSHXfr3L0C7f-9iZAI4BW4RhLjmB4RWMNzEDj', # wick
     '1113626703491776562' : 'https://discord.com/api/webhooks/1281576484749836309/GF1MYLJ0aRHoNg3uF86df0hjE6wqiLkc_ZF31VNquA2swEaNRHrbKImUWFk0OLwHWgsB', # eagle
+    '1050275586968395798' : 'https://discord.com/api/webhooks/1283033093133045862/2S4HrVTXqdlpBofO3R6R7VnGHD9dm-uYwYCkKsrVwRCS0a1b-optQDC1fsAUs5he92cd', # fib
+    '1275290247109935128' : 'https://discord.com/api/webhooks/1283033259638263849/A_lrcgE1X2KaqN24B3a4GORD6HPlvYHjXWNor2oGqvZ2XfVxtLUVKYNAsK53ugYzIv1Y', # dev
+    '1275291198310842481' : 'https://discord.com/api/webhooks/1283033395345100880/fj93u9u9g2n_cZfWxljVuYEEAhJF40qG1ZbNdQirYql5bjJQt16UpZ0l6G5ElpsUrjL0', # elom
     '1258356916133036043' : 'https://discord.com/api/webhooks/1280947188096176180/lLHcxuE6mNkykxViCIbOnUYEwiSWvUs36_MIYZ-a6ViubUfnst8t3eaDP_uJDwPi_KW_' # test
 }
 
@@ -82,6 +85,8 @@ def deal_with_messsage(message):
         return
     if message.get('d').get('channel_id') in REPOST_MAP:
         url = REPOST_MAP[message.get('d').get('channel_id')]
+    elif message.get('d').get('channel_id') == '994362479830384650' and len(message.get('d').get('attachments', [])) > 0 and ('net_market_1' in message.get('d').get('attachments')[0].get('url') or 'algo_market_1' in message.get('d').get('attachments')[0].get('url')):
+        url = 'https://discord.com/api/webhooks/1283034978669563945/s6D2y9EBTM7MPEVZ5DKc5IAocF8YyCbTj6G0CGPWlNeEnkn2n87PIjBIsK9i0-fdYSFt' # tr-mnf
     else:
         return
     app.logger.info(message)
