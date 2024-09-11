@@ -26,6 +26,8 @@ REPOST_MAP = {
     '1050275586968395798' : 'https://discord.com/api/webhooks/1283033093133045862/2S4HrVTXqdlpBofO3R6R7VnGHD9dm-uYwYCkKsrVwRCS0a1b-optQDC1fsAUs5he92cd', # fib
     '1275290247109935128' : 'https://discord.com/api/webhooks/1283033259638263849/A_lrcgE1X2KaqN24B3a4GORD6HPlvYHjXWNor2oGqvZ2XfVxtLUVKYNAsK53ugYzIv1Y', # dev
     '1275291198310842481' : 'https://discord.com/api/webhooks/1283033395345100880/fj93u9u9g2n_cZfWxljVuYEEAhJF40qG1ZbNdQirYql5bjJQt16UpZ0l6G5ElpsUrjL0', # elom
+    '1255965493903233166' : 'https://discord.com/api/webhooks/1283384836903407616/I_4WlE7gbafrHVCvK7vW5WPgnFu1upRFKaoasWiRmRdYI9mG9HUzdP7K3VBI1knoQmlD', # wolf
+    '1244040902582865937' : 'https://discord.com/api/webhooks/1283384988175302749/t_NvSQhTLRosJHWhgs8ysjJ7rXOySYE0ov1mz6IAfmemmPL5l7J6P49AHvneaN266vWw', # cblast
     '1258356916133036043' : 'https://discord.com/api/webhooks/1280947188096176180/lLHcxuE6mNkykxViCIbOnUYEwiSWvUs36_MIYZ-a6ViubUfnst8t3eaDP_uJDwPi_KW_' # test
 }
 
