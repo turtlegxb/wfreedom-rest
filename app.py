@@ -1,5 +1,6 @@
 import json
 import logging
+import os
 import traceback
 import zlib
 
@@ -100,6 +101,9 @@ def deal_with_messsage(message):
                  or 'gexz_spy_s' in message.get('d').get('attachments')[0].get('url')
                 or 'gexz_qqq_s' in message.get('d').get('attachments')[0].get('url')):
         url = 'https://discord.com/api/webhooks/1283136528134045706/NzdVbgpUsBbXJstXggvjKRVDU68WLK-KIja3B2l6nV3iovn_Zi33HFoVWzBO7srIgX3z' # tr-gex
+    elif message.get('d').get('channel_id') == '1027647733219209227' and len(message.get('d').get('attachments', [])) > 0:
+        push_gex_bot(message)
+        return
     else:
         return
     app.logger.info(message)
@@ -115,6 +119,21 @@ def deal_with_messsage(message):
             embed.set_image(url=attachment.get('url'))
             webhook.add_embed(embed)
     # requests.post(url, msg)
+    response = webhook.execute()
+
+async def push_gex_bot(message):
+    url = 'https://discord.com/api/webhooks/1283802750072655892/gVsvhRq_DGJhciSAlDOki7zGqAjjudlrs1XcCDhAyBoYGBgUzLcI0UmuEcJ5EWMXc08E'
+    image_url = message.get('d').get('attachments').get('url')
+    wget_cmd = "wget '%s' -O gex_origin.png" % image_url
+    os.system(wget_cmd)
+    ffmpeg_cmd = 'ffmpeg -i gex_origin.png -filter:v "crop=300:205:720:600" gex_crop.png'
+    os.system(ffmpeg_cmd)
+    webhook = DiscordWebhook(url=url, content=message.get('d').get('content'), username=message.get('d').get('username'))
+    with open('gex_crop.png', 'rb') as f:
+        webhook.add_file(file=f.read(), filename='gex_crop.png')
+    embed = DiscordEmbed()
+    embed.set_image(url='attachment://gex_crop.png')
+    webhook.add_embed(embed)
     response = webhook.execute()
 
 if __name__ == '__main__':
