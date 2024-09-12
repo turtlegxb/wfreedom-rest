@@ -102,6 +102,7 @@ def deal_with_messsage(message):
                 or 'gexz_qqq_s' in message.get('d').get('attachments')[0].get('url')):
         url = 'https://discord.com/api/webhooks/1283136528134045706/NzdVbgpUsBbXJstXggvjKRVDU68WLK-KIja3B2l6nV3iovn_Zi33HFoVWzBO7srIgX3z' # tr-gex
     elif message.get('d').get('channel_id') == '1027647733219209227' and len(message.get('d').get('attachments', [])) > 0:
+        app.logger.info(message)
         push_gex_bot(message)
         return
     else:
