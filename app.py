@@ -124,7 +124,7 @@ def deal_with_messsage(message):
 
 def push_gex_bot(message):
     url = 'https://discord.com/api/webhooks/1283802750072655892/gVsvhRq_DGJhciSAlDOki7zGqAjjudlrs1XcCDhAyBoYGBgUzLcI0UmuEcJ5EWMXc08E'
-    image_url = message.get('d').get('attachments').get('url')
+    image_url = message.get('d').get('attachments')[0].get('url')
     wget_cmd = "wget '%s' -O gex_origin.png" % image_url
     os.system(wget_cmd)
     ffmpeg_cmd = 'ffmpeg -i gex_origin.png -filter:v "crop=300:205:720:600" gex_crop.png'
