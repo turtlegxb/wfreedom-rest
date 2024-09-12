@@ -122,7 +122,7 @@ def deal_with_messsage(message):
     # requests.post(url, msg)
     response = webhook.execute()
 
-async def push_gex_bot(message):
+def push_gex_bot(message):
     url = 'https://discord.com/api/webhooks/1283802750072655892/gVsvhRq_DGJhciSAlDOki7zGqAjjudlrs1XcCDhAyBoYGBgUzLcI0UmuEcJ5EWMXc08E'
     image_url = message.get('d').get('attachments').get('url')
     wget_cmd = "wget '%s' -O gex_origin.png" % image_url
