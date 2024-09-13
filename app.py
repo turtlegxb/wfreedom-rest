@@ -133,9 +133,14 @@ def deal_with_messsage(message):
 def push_x_bot(message):
     url = 'https://discord.com/api/webhooks/1284110967478812672/m7dXnYn4Ud0YQxQbcqP49HEDVFst_TWC-aRinIsY8Acv8vH7LKkn52tmzx5Y2cfe0YLN'
     image_url = message.get('d').get('embeds')[0].get('image').get('url')
+    app.logger.info(image_url)
+    wget_cmd = "wget '%s' -O ts.jpg" % image_url
+    os.system(wget_cmd)
     webhook = DiscordWebhook(url=url, content=message.get('d').get('content'), username=message.get('d').get('username'))
+    with open('ts.jpg', 'rb') as f:
+        webhook.add_file(file=f.read(), filename='ts.jpg')
     embed = DiscordEmbed()
-    embed.set_image(url=image_url)
+    embed.set_image(url='attachment://ts.jpg')
     webhook.add_embed(embed)
     response = webhook.execute()
 
