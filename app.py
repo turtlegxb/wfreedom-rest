@@ -109,6 +109,9 @@ def deal_with_messsage(message):
         app.logger.info(message)
         push_gex_bot(message)
         return
+    elif message.get('d').get('channel_id') == '860503584721076224':
+        app.logger.info(message)
+        return
     else:
         return
     app.logger.info(message)
@@ -124,6 +127,16 @@ def deal_with_messsage(message):
             embed.set_image(url=attachment.get('url'))
             webhook.add_embed(embed)
     # requests.post(url, msg)
+    response = webhook.execute()
+
+
+def push_x_bot(message):
+    url = 'https://discord.com/api/webhooks/1284110967478812672/m7dXnYn4Ud0YQxQbcqP49HEDVFst_TWC-aRinIsY8Acv8vH7LKkn52tmzx5Y2cfe0YLN'
+    image_url = message.get('d').get('embeds')[0].get('image').get('url')
+    webhook = DiscordWebhook(url=url, content=message.get('d').get('content'), username=message.get('d').get('username'))
+    embed = DiscordEmbed()
+    embed.set_image(url=image_url)
+    webhook.add_embed(embed)
     response = webhook.execute()
 
 def push_gex_bot(message):
