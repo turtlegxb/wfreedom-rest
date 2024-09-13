@@ -111,6 +111,7 @@ def deal_with_messsage(message):
         return
     elif message.get('d').get('channel_id') == '860503584721076224':
         app.logger.info(message)
+        push_x_bot(message)
         return
     else:
         return
@@ -137,10 +138,8 @@ def push_x_bot(message):
     wget_cmd = "wget '%s' -O ts.jpg" % image_url
     os.system(wget_cmd)
     webhook = DiscordWebhook(url=url, content=message.get('d').get('content'), username=message.get('d').get('username'))
-    with open('ts.jpg', 'rb') as f:
-        webhook.add_file(file=f.read(), filename='ts.jpg')
     embed = DiscordEmbed()
-    embed.set_image(url='attachment://ts.jpg')
+    embed.set_image(url=image_url)
     webhook.add_embed(embed)
     response = webhook.execute()
 
