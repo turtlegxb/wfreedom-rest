@@ -11,9 +11,8 @@ from base64 import b64decode
 from discord_webhook import DiscordWebhook, DiscordEmbed
 
 app = Flask(__name__)
-logger = logging.getLogger('werkzeug')
 handler = logging.FileHandler('stream.log')
-logger.addHandler(handler)
+app.logger.addHandler(handler)
 buffers = {}
 decompressors = {}
 
