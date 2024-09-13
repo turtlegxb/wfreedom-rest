@@ -13,6 +13,7 @@ from discord_webhook import DiscordWebhook, DiscordEmbed
 app = Flask(__name__)
 handler = logging.FileHandler('stream.log')
 app.logger.addHandler(handler)
+app.logger.setLevel(logging.INFO)
 buffers = {}
 decompressors = {}
 
