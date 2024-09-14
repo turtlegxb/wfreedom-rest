@@ -109,7 +109,7 @@ def deal_with_messsage(message):
         app.logger.info(message)
         push_gex_bot(message)
         return
-    elif message.get('d').get('channel_id') == '860503584721076224':
+    elif message.get('d').get('channel_id') in ['860503584721076224', '1253107508449509457']:
         app.logger.info(message)
         push_x_bot(message)
         return
