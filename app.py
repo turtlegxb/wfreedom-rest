@@ -24,7 +24,7 @@ REPOST_MAP = {
     # aiden
     '1121583569941315634': 'https://discord.com/api/webhooks/1281227521534333020/wv1eZm0pu-2KTylUPRr-go_omLguJqlLy9wM1hc10Gn1bu1pZUFx0P6y68xzdDbH_UUM',
     # jv
-    '1181808200358580225': 'https://discord.com/api/webhooks/1281227785553186816/jcbLyG21MakQowAT1ql9XWLi0T6gH3WRqJkhbb-mxvI2q3SnfiKGqTFppUqijwY3MuoW',
+    # '1181808200358580225': 'https://discord.com/api/webhooks/1281227785553186816/jcbLyG21MakQowAT1ql9XWLi0T6gH3WRqJkhbb-mxvI2q3SnfiKGqTFppUqijwY3MuoW',
     # mike
     '969226339766927410': 'https://discord.com/api/webhooks/1281228125908500530/yFRi7p6EMg2arZGittSnK3xC9H_oTvAV2ylp0IpusrdDozM4Q7_PyJjjv0w8NWNWsuV0',
     # UW
