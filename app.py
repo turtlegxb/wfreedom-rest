@@ -47,7 +47,10 @@ REPOST_MAP = {
     '1244040902582865937': 'https://discord.com/api/webhooks/1283384988175302749/t_NvSQhTLRosJHWhgs8ysjJ7rXOySYE0ov1mz6IAfmemmPL5l7J6P49AHvneaN266vWw',
     # cblast
     # '860503584721076224' : 'https://discord.com/api/webhooks/1284110967478812672/m7dXnYn4Ud0YQxQbcqP49HEDVFst_TWC-aRinIsY8Acv8vH7LKkn52tmzx5Y2cfe0YLN', # trendspider
-    '1258356916133036043': 'https://discord.com/api/webhooks/1280947188096176180/lLHcxuE6mNkykxViCIbOnUYEwiSWvUs36_MIYZ-a6ViubUfnst8t3eaDP_uJDwPi_KW_'
+    '1258356916133036043': 'https://discord.com/api/webhooks/1280947188096176180/lLHcxuE6mNkykxViCIbOnUYEwiSWvUs36_MIYZ-a6ViubUfnst8t3eaDP_uJDwPi_KW_',
+    # unusual flow
+    '935627450099069008' : 'https://discord.com/api/webhooks/1299020727546023976/MkWH1wVV6HfMvNbo1FJz03Jrp6fUSt8Kz3wJWOSnLOdT8lrVfGlWmF8ZJRhene1hx7Er',
+    '935618770150518855' : 'https://discord.com/api/webhooks/1299020727546023976/MkWH1wVV6HfMvNbo1FJz03Jrp6fUSt8Kz3wJWOSnLOdT8lrVfGlWmF8ZJRhene1hx7Er',
     # test
 }
 
