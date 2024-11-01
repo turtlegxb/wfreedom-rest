@@ -153,6 +153,9 @@ def deal_with_messsage(message):
             embed = DiscordEmbed()
             embed.set_image(url=attachment.get('url'))
             webhook.add_embed(embed)
+    if len(message.get('d').get('embeds')) > 0:
+        for embed in message.get('d').get('embeds'):
+            webhook.add_embed(embed)
     # requests.post(url, msg)
     response = webhook.execute()
 
