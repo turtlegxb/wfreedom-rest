@@ -125,7 +125,7 @@ def deal_with_messsage(message):
                  or 'gexz_spy_s' in message.get('d').get('attachments')[0].get('url')
                  or 'gexz_qqq_s' in message.get('d').get('attachments')[0].get('url')):
         url = 'https://discord.com/api/webhooks/1283136528134045706/NzdVbgpUsBbXJstXggvjKRVDU68WLK-KIja3B2l6nV3iovn_Zi33HFoVWzBO7srIgX3z'  # tr-gex
-    elif (message.get('d').get('channel_id') == '1014626943922077856') and len(message.get('d').get('attachments') > 0): # gex1
+    elif (message.get('d').get('channel_id') == '1014626943922077856') and len(message.get('d').get('attachments')) > 0: # gex1
         url = 'https://discord.com/api/webhooks/1301948918225047655/EGWy1_kUqC1ln8Qx_lrXI__17-iQHKHsXzgkBbMvfI_02IXkFT1MKax_y1F-bwK32jOr'
         app.logger.info(message)
         push_image_bot(message, url)
