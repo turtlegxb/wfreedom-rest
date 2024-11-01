@@ -125,6 +125,10 @@ def deal_with_messsage(message):
                  or 'gexz_spy_s' in message.get('d').get('attachments')[0].get('url')
                  or 'gexz_qqq_s' in message.get('d').get('attachments')[0].get('url')):
         url = 'https://discord.com/api/webhooks/1283136528134045706/NzdVbgpUsBbXJstXggvjKRVDU68WLK-KIja3B2l6nV3iovn_Zi33HFoVWzBO7srIgX3z'  # tr-gex
+    elif (message.get('d').get('channel_id') == '1014626943922077856') and message.get('d').get('author').get('bot'): # gex1
+        url = 'https://discord.com/api/webhooks/1301948918225047655/EGWy1_kUqC1ln8Qx_lrXI__17-iQHKHsXzgkBbMvfI_02IXkFT1MKax_y1F-bwK32jOr'
+        app.logger.info(message)
+        push_image_bot(message, url)
     elif message.get('d').get('channel_id') == '1027647733219209227' and len(
             message.get('d').get('attachments', [])) > 0:
         app.logger.info(message)
@@ -166,6 +170,17 @@ def push_x_bot(message):
     webhook.add_embed(embed)
     response = webhook.execute()
 
+def push_image_bot(message, url):
+    image_url = message.get('d').get('embeds')[0].get('image').get('url')
+    app.logger.info(image_url)
+    wget_cmd = "wget '%s' -O temp.jpg" % image_url
+    os.system(wget_cmd)
+    webhook = DiscordWebhook(url=url, content=message.get('d').get('content'),
+                             username=message.get('d').get('username'))
+    embed = DiscordEmbed()
+    embed.set_image(url=image_url)
+    webhook.add_embed(embed)
+    response = webhook.execute()
 
 def push_gex_bot(message):
     url = 'https://discord.com/api/webhooks/1283802750072655892/gVsvhRq_DGJhciSAlDOki7zGqAjjudlrs1XcCDhAyBoYGBgUzLcI0UmuEcJ5EWMXc08E'
