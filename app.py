@@ -174,7 +174,7 @@ def push_x_bot(message):
     response = webhook.execute()
 
 def push_image_bot(message, url):
-    image_url = message.get('d').get('embeds')[0].get('image').get('url')
+    image_url = message.get('d').get('attachments')[0].get('image').get('url')
     app.logger.info(image_url)
     wget_cmd = "wget '%s' -O temp.jpg" % image_url
     os.system(wget_cmd)
