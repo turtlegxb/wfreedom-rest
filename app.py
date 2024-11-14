@@ -194,7 +194,7 @@ def push_gex_bot(message):
     image_url = message.get('d').get('attachments')[0].get('url')
     wget_cmd = "wget '%s' -O gex_origin.png" % image_url
     os.system(wget_cmd)
-    ffmpeg_cmd = 'ffmpeg -i gex_origin.png -filter:v "crop=600:405:1420:1100" gex_crop.png -y'
+    ffmpeg_cmd = 'ffmpeg -i gex_origin.png -filter:v "crop=650:405:1420:1100" gex_crop.png -y'
     os.system(ffmpeg_cmd)
     webhook = DiscordWebhook(url=url, content=message.get('d').get('content'),
                              username=message.get('d').get('username'))
