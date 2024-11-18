@@ -22,39 +22,39 @@ REPOST_MAP = {
     # penny
     '1238564371115020298': 'https://discord.com/api/webhooks/1281227356551385098/yhlNXNIYmSc_0RlvHH5-V2qQH9VT45OPhzZpFAUjRVOMtQpu4fKg1QVsLcf7egOkEJfq',
     # aiden
-    '1121583569941315634': 'https://discord.com/api/webhooks/1281227521534333020/wv1eZm0pu-2KTylUPRr-go_omLguJqlLy9wM1hc10Gn1bu1pZUFx0P6y68xzdDbH_UUM',
+    '1121583569941315634': 'https://discord.com/api/webhooks/1308168354917388420/C57YbWzjF4_Axf9sUP18GswmjT5qmaadJoKzdmAlyKpEAfjuMHlmnlgwfjA4-RSEYhY6',
     # jv
     # '1181808200358580225': 'https://discord.com/api/webhooks/1281227785553186816/jcbLyG21MakQowAT1ql9XWLi0T6gH3WRqJkhbb-mxvI2q3SnfiKGqTFppUqijwY3MuoW',
     # mike
-    '969226339766927410': 'https://discord.com/api/webhooks/1281228125908500530/yFRi7p6EMg2arZGittSnK3xC9H_oTvAV2ylp0IpusrdDozM4Q7_PyJjjv0w8NWNWsuV0',
+    '969226339766927410': 'https://discord.com/api/webhooks/1308168660422234162/omTXY9WjjKszUZ-3JcaG9fuzz94_LJP-NXS4J8QGl7avEgVAjI4pjURz_HFJepLqoyq6',
     # UW
     '1266488368452206746': 'https://discord.com/api/webhooks/1281575646576775210/qwLKhUj-Z5B0HLQyJ2onCL4Zxo0Zc8Eys5cB732krR0tFJlJfSFQzwNzIKKPMJCEjqPn',
     # cobra
     '1289681365373157416': 'https://discord.com/api/webhooks/1281575975326453913/aQrO9578YZHwwcNHL71N-U0kyaJUY1XFSHXfr3L0C7f-9iZAI4BW4RhLjmB4RWMNzEDj',
     # wick
-    '1230679377700716594': 'https://discord.com/api/webhooks/1281575975326453913/aQrO9578YZHwwcNHL71N-U0kyaJUY1XFSHXfr3L0C7f-9iZAI4BW4RhLjmB4RWMNzEDj',
+    '1230679377700716594': 'https://discord.com/api/webhooks/1308168536581079110/e3PYNrhXDGZAmg-IWlqW0w5xSloKQVPh3S2xt0_PmUAuFwwpzW7A_zcjASB9A0LglGOE',
     # wick
     '1113626703491776562': 'https://discord.com/api/webhooks/1281576484749836309/GF1MYLJ0aRHoNg3uF86df0hjE6wqiLkc_ZF31VNquA2swEaNRHrbKImUWFk0OLwHWgsB',
     # eagle
-    '1050275586968395798': 'https://discord.com/api/webhooks/1283033093133045862/2S4HrVTXqdlpBofO3R6R7VnGHD9dm-uYwYCkKsrVwRCS0a1b-optQDC1fsAUs5he92cd',
+    '1050275586968395798': 'https://discord.com/api/webhooks/1308168438421655563/acJMaEIUtlm-SlH0PIw58EoKaON2Wk85c2pgda05WWGVLfh9AsCJYCoyd0ftocVXmlqq',
     # fib
     '1275290247109935128': 'https://discord.com/api/webhooks/1283033259638263849/A_lrcgE1X2KaqN24B3a4GORD6HPlvYHjXWNor2oGqvZ2XfVxtLUVKYNAsK53ugYzIv1Y',
     # dev
-    '1275291198310842481': 'https://discord.com/api/webhooks/1283033395345100880/fj93u9u9g2n_cZfWxljVuYEEAhJF40qG1ZbNdQirYql5bjJQt16UpZ0l6G5ElpsUrjL0',
+    '1275291198310842481': 'https://discord.com/api/webhooks/1308168239863566346/kQUrf_Fz218X2b6GfYAx8cqQUhJMiN3rCEPyfyA-gLCUCsVHmghQcvZVj0XD_pjzT1Ex',
     # elom
-    '1255965493903233166': 'https://discord.com/api/webhooks/1283384836903407616/I_4WlE7gbafrHVCvK7vW5WPgnFu1upRFKaoasWiRmRdYI9mG9HUzdP7K3VBI1knoQmlD',
+    '1255965493903233166': 'https://discord.com/api/webhooks/1308168006836162560/Ol_ROoUyux85jZ0Q7BdLve15NY7C3QD5atyNlBNTSX9q-MJiUHCCncKW4Jy-Ca4BuhBp',
     # wolf
-    '1244040902582865937': 'https://discord.com/api/webhooks/1283384988175302749/t_NvSQhTLRosJHWhgs8ysjJ7rXOySYE0ov1mz6IAfmemmPL5l7J6P49AHvneaN266vWw',
+    '1244040902582865937': 'https://discord.com/api/webhooks/1308167923390742598/U2e2DEYGTgPW-LsCIhGVMEB7QMN0DMqy2EalMkM0Nv4cRRQsL_vY6TXpfq3gbTmoOKIU',
     # cblast
     # '860503584721076224' : 'https://discord.com/api/webhooks/1284110967478812672/m7dXnYn4Ud0YQxQbcqP49HEDVFst_TWC-aRinIsY8Acv8vH7LKkn52tmzx5Y2cfe0YLN', # trendspider
-    '1258356916133036043': 'https://discord.com/api/webhooks/1280947188096176180/lLHcxuE6mNkykxViCIbOnUYEwiSWvUs36_MIYZ-a6ViubUfnst8t3eaDP_uJDwPi_KW_',
+    '1258356916133036043': 'https://discord.com/api/webhooks/1308168951443882115/lgV4jmQ1rUygVUeNzZ3HxyZfpaAV6x8aroxwLs2P-TC4yWmaloxADiJRDzb6SqGPA7a5',
     # unusual flow
-    '935627450099069008' : 'https://discord.com/api/webhooks/1299020727546023976/MkWH1wVV6HfMvNbo1FJz03Jrp6fUSt8Kz3wJWOSnLOdT8lrVfGlWmF8ZJRhene1hx7Er',
-    '935618770150518855' : 'https://discord.com/api/webhooks/1299020727546023976/MkWH1wVV6HfMvNbo1FJz03Jrp6fUSt8Kz3wJWOSnLOdT8lrVfGlWmF8ZJRhene1hx7Er',
+    '935627450099069008' : 'https://discord.com/api/webhooks/1308168804379132005/IGXcGnR11ikFtpMKPQCRio3bZv_T8Rtc1xvEWMUkxS_0u0Tjb7QoJmNf1rHmxTthTl4R',
+    '935618770150518855' : 'https://discord.com/api/webhooks/1308168804379132005/IGXcGnR11ikFtpMKPQCRio3bZv_T8Rtc1xvEWMUkxS_0u0Tjb7QoJmNf1rHmxTthTl4R',
     # openbb
-    '1062441525059002388': 'https://discord.com/api/webhooks/1301960830471901255/C9Tk-9ykDT3kMpv3Vx5whAQ0ZAGA7Os5IadHWgbk2WySmohVML-fZdBskRutCUp8kAl1',
+    '1062441525059002388': 'https://discord.com/api/webhooks/1308167823473770557/nlN_Auq_lpfOTNN8nrQ4Z8lglBvkWQIOoRxD-kd2KUUFYAgZJA9KTvBvi9PnlPYP6qwI',
     # remz
-    '1279816198808404069': 'https://discord.com/api/webhooks/1306622572896587826/MMt-YxLpsnhyNwke0EDzyG1aIdrxhhM5t7roX4X3PxT3pWDEMfJS07Tz-sKdwSSW-no4',
+    '1279816198808404069': 'https://discord.com/api/webhooks/1308167823473770557/nlN_Auq_lpfOTNN8nrQ4Z8lglBvkWQIOoRxD-kd2KUUFYAgZJA9KTvBvi9PnlPYP6qwI',
     # test
 }
 
