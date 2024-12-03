@@ -48,10 +48,10 @@ REPOST_MAP = {
     # cblast
     # '860503584721076224' : 'https://discord.com/api/webhooks/1284110967478812672/m7dXnYn4Ud0YQxQbcqP49HEDVFst_TWC-aRinIsY8Acv8vH7LKkn52tmzx5Y2cfe0YLN', # trendspider
     '1258356916133036043': 'https://discord.com/api/webhooks/1308168951443882115/lgV4jmQ1rUygVUeNzZ3HxyZfpaAV6x8aroxwLs2P-TC4yWmaloxADiJRDzb6SqGPA7a5',
+    #
+    '935627450099069008' : 'https://discord.com/api/webhooks/1313549166172967003/RqsUW3kIur69LlZ5WCKTSQIXWLWleUc4FBOiT9wvM-334Da9l6kj9gYiiftu9duQ1fDt',
+    '935618770150518855' : 'https://discord.com/api/webhooks/1313549166172967003/RqsUW3kIur69LlZ5WCKTSQIXWLWleUc4FBOiT9wvM-334Da9l6kj9gYiiftu9duQ1fDt',
     # unusual flow
-    '935627450099069008' : 'https://discord.com/api/webhooks/1308168804379132005/IGXcGnR11ikFtpMKPQCRio3bZv_T8Rtc1xvEWMUkxS_0u0Tjb7QoJmNf1rHmxTthTl4R',
-    '935618770150518855' : 'https://discord.com/api/webhooks/1308168804379132005/IGXcGnR11ikFtpMKPQCRio3bZv_T8Rtc1xvEWMUkxS_0u0Tjb7QoJmNf1rHmxTthTl4R',
-    # openbb
     '1062441525059002388': 'https://discord.com/api/webhooks/1308167823473770557/nlN_Auq_lpfOTNN8nrQ4Z8lglBvkWQIOoRxD-kd2KUUFYAgZJA9KTvBvi9PnlPYP6qwI',
     # remz
     '1279816198808404069': 'https://discord.com/api/webhooks/1308167823473770557/nlN_Auq_lpfOTNN8nrQ4Z8lglBvkWQIOoRxD-kd2KUUFYAgZJA9KTvBvi9PnlPYP6qwI',
