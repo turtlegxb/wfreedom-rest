@@ -54,6 +54,10 @@ REPOST_MAP = {
     # unusual flow
     '1062441525059002388': 'https://discord.com/api/webhooks/1308167823473770557/nlN_Auq_lpfOTNN8nrQ4Z8lglBvkWQIOoRxD-kd2KUUFYAgZJA9KTvBvi9PnlPYP6qwI',
     # remz
+    '874280313038192670': 'https://discord.com/api/webhooks/1317199396382965810/6L_QSYfs-SE74czst96BSdRo6k3bvjK2dX1x4wWPlmv-XOxAV-vMQmKcBawn-FtxPWJH',
+    # demon
+    '1270184529763635263': 'https://discord.com/api/webhooks/1317199570723143690/GTwZZedR2-jcRpy0fPDgy4adoRsB1T2NpsXSb1Z0BWOLFPXa4B8UToUSYZSJVAFAWo8J',
+    # rob
     '1279816198808404069': 'https://discord.com/api/webhooks/1308167823473770557/nlN_Auq_lpfOTNN8nrQ4Z8lglBvkWQIOoRxD-kd2KUUFYAgZJA9KTvBvi9PnlPYP6qwI',
     # test
 }
