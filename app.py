@@ -52,7 +52,7 @@ REPOST_MAP = {
     '935627450099069008' : 'https://discord.com/api/webhooks/1313549166172967003/RqsUW3kIur69LlZ5WCKTSQIXWLWleUc4FBOiT9wvM-334Da9l6kj9gYiiftu9duQ1fDt',
     '935618770150518855' : 'https://discord.com/api/webhooks/1313549166172967003/RqsUW3kIur69LlZ5WCKTSQIXWLWleUc4FBOiT9wvM-334Da9l6kj9gYiiftu9duQ1fDt',
     # unusual flow
-    '1062441525059002388': 'https://discord.com/api/webhooks/1308167823473770557/nlN_Auq_lpfOTNN8nrQ4Z8lglBvkWQIOoRxD-kd2KUUFYAgZJA9KTvBvi9PnlPYP6qwI',
+    '1279816198808404069': 'https://discord.com/api/webhooks/1308167823473770557/nlN_Auq_lpfOTNN8nrQ4Z8lglBvkWQIOoRxD-kd2KUUFYAgZJA9KTvBvi9PnlPYP6qwI',
     # remz
     '874280313038192670': 'https://discord.com/api/webhooks/1317199396382965810/6L_QSYfs-SE74czst96BSdRo6k3bvjK2dX1x4wWPlmv-XOxAV-vMQmKcBawn-FtxPWJH',
     # demon
