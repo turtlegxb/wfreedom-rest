@@ -140,7 +140,7 @@ def deal_with_messsage(message):
         app.logger.info(message)
         # push_image_bot(message, url)
     elif message.get('d').get('channel_id') == '1027647733219209227' and len(
-            message.get('d').get('attachments', [])) > 0:
+            message.get('d').get('attachments', [])) > 0 and message.get('t', None) == 'MESSAGE_CREATE':
         app.logger.info(message)
         push_gex_bot(message)
         return
