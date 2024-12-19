@@ -119,7 +119,7 @@ def deal_with_messsage(message):
     #     app.logger.info(message)
     if message.get('t', None) not in ['MESSAGE_UPDATE', 'MESSAGE_CREATE'] or message.get('d').get('channel_id') == '1280220293759238238':
         return
-    if message.get('d').get('channel_id') in REPOST_MAP:
+    if message.get('d').get('channel_id') in REPOST_MAP and message.get('t', None) == 'MESSAGE_CREATE':
         url = REPOST_MAP[message.get('d').get('channel_id')]
     elif message.get('d').get('channel_id') == '994362479830384650' and len(message.get('d').get('attachments', [])) > 0 \
             and ('net_market_1__999' in message.get('d').get('attachments')[0].get('url')
